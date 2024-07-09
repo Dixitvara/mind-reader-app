@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">mind reader</string>
+    <string name="_00">00</string>
+    <string name="icons">icons</string>
+    <string name="mind_reader">Mind reader</string>
+    <string name="developer_ndixit_vala">Developer :\nDixit vala</string>
+    <string name="i_can_read_your_mind">I can read your mind!</string>
+    <string name="start">Start</string>
+    <string name="_1_choose_any_two_digit_number">1. choose any two digit number</string>
+    <string name="_2_add_both_digit_together">2. Add both digit together.</string>
+    <string name="_3_subtract_the_total_from_the_original_number">3. subtract the total from the original number</string>
+    <string name="example_if_chosen_number_is_69_add_two_digit_together_6_9_15_then_subtract_15_from_69_to_get_the_answer">Example: Assume your chosen number is 69 : add two digit together : 6+9=15 then subtract 15 from 69 : 69-15=54. So your answer will be 54</string>
+    <string name="next">Next</string>
+</resources>
