@@ -8,9 +8,9 @@
 
 
     <ImageView
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_margin="30dp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_30sdp"
         android:layout_gravity="center"
         android:src="@drawable/icon" />
 
@@ -22,7 +22,7 @@
         android:fontFamily="@font/popins"
         android:text="@string/mind_reader"
         android:textColor="@color/black"
-        android:textSize="60sp"
+        android:textSize="@dimen/_45ssp"
         android:textStyle="bold" />
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_gravity="center"
         android:text="@string/i_can_read_your_mind"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="@dimen/_20ssp"
         />
 
     <Button
@@ -40,11 +40,10 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4F000000"
         android:fontFamily="@font/popins"
         android:text="@string/start"
         android:textColor="@color/black"
-        android:layout_margin="50dp"
-        android:textSize="18sp"
+        android:layout_margin="@dimen/_50sdp"
+        android:textSize="@dimen/_14ssp"
         android:textStyle="bold" />
 </LinearLayout>

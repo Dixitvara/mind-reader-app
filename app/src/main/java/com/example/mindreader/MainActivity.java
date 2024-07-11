@@ -7,6 +7,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.internal.EdgeToEdgeUtils;
+
 public class MainActivity extends AppCompatActivity {
     AlertDialog.Builder builder;
     @Override
@@ -24,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle("Exit app?");
         builder.setMessage("Do you really want to close the app?").
                 setCancelable(false).
-                setPositiveButton("Yes",(dialogInterface, i) -> finishAffinity()).
-                setNegativeButton("Cancel",(dialogInterface, i) -> dialogInterface.cancel());
+                setPositiveButton("Yes", (dialogInterface, i) -> finishAffinity()).
+                setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
         AlertDialog alert = builder.create();
         alert.show();
     }
