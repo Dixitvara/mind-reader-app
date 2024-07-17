@@ -2,6 +2,7 @@ package com.example.mindreader;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,22 +49,27 @@ public class page3 extends AppCompatActivity {
                 if (ansArray.contains(i))
                     models.put(i, models.get(0));
             } catch (Exception e) {
-                e.printStackTrace();
+                Log.i(String.valueOf(e),"");
             }
         }
 
 
         // setting adapter to recycler view
         IconAdapter adapter = new IconAdapter(models);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 6));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,
+                4));
         recyclerView.setAdapter(adapter);
 
         // saving data and sending to next activity
-        Intent intent = new Intent(this,MainActivity4.class);
+        Intent intent = new Intent(this,
+                MainActivity4.class);
         Bundle bundle = new Bundle();
 
-        bundle.putInt("answer", models.get(0));
-        intent.putExtras(bundle);
+        if(!models.isEmpty()){
+            bundle.putInt("answer",
+                    models.get(0));
+            intent.putExtras(bundle);
+        }
 
         // navigating to next activity
         nextBtn.setOnClickListener(view -> {

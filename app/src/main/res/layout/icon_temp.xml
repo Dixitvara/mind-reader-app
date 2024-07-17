@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_00"
         android:fontFamily="@font/popins"
-        android:textSize="@dimen/_12ssp"
+        android:textSize="15sp"
         android:textColor="@color/black"
-        android:layout_margin="@dimen/_5sdp"
-        android:id="@+id/number"
+        android:layout_margin="5dp"
         />
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/icons"
-        app:tint="@color/black"
-        android:minWidth="@dimen/_10sdp"
-        android:minHeight="@dimen/_10sdp"
+
         android:id="@+id/icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/icons"
+        android:layout_toEndOf="@+id/number"
+        app:tint="@color/black"
+        android:src="@mipmap/i1"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="10dp"
         />
-</LinearLayout>
+</RelativeLayout>

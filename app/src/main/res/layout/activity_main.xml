@@ -8,42 +8,40 @@
 
 
     <ImageView
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_margin="@dimen/_30sdp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
+        android:layout_margin="40dp"
         android:src="@drawable/icon" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:fontFamily="@font/popins"
         android:text="@string/mind_reader"
         android:textColor="@color/black"
-        android:textSize="@dimen/_45ssp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/popins"
         android:layout_gravity="center"
+        android:fontFamily="@font/popins"
         android:text="@string/i_can_read_your_mind"
         android:textColor="@color/black"
-        android:textSize="@dimen/_20ssp"
-        />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/startBtn"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
         android:fontFamily="@font/popins"
         android:text="@string/start"
         android:textColor="@color/black"
-        android:layout_margin="@dimen/_50sdp"
-        android:textSize="@dimen/_14ssp"
-        android:textStyle="bold" />
+        android:textSize="16sp" />
 </LinearLayout>
