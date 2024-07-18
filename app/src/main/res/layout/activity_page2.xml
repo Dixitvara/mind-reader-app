@@ -54,6 +54,17 @@
         android:text="@string/example_if_chosen_number_is_69_add_two_digit_together_6_9_15_then_subtract_15_from_69_to_get_the_answer"
         android:textColor="@color/black"
         />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/popins"
+        android:text="Find your answer in next chart and remember the icon besides your answer."
+        android:textColor="@color/black"
+        />
 
     <Button
         android:id="@+id/nextBtn"
